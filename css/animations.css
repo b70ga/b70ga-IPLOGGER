@@ -1,0 +1,78 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-5%, -5%) scale(1.1); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(61, 90, 254, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(61, 90, 254, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(61, 90, 254, 0.5); }
+}
+
+.container {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.input-group, .logo-text, h2, .btn, .info-text {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.btn {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo {
+    animation: float 6s ease-in-out infinite;
+}
+
+.input-group:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.input-group:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.input-group:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.step.active {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.copied {
+    animation: glow 1s;
+}
+
+.error {
+    transition: all 0.3s;
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-2px, 0, 0); }
+    40%, 60% { transform: translate3d(2px, 0, 0); }
+}
