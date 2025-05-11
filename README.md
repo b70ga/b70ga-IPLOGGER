@@ -1,4 +1,4 @@
-![Stars](https://img.shields.io/github/stars/b70ga/b70ga-IPLOGGER?style=flat-square) ![Contributors](https://img.shields.io/github/contributors/b70ga/b70ga-IPLOGGER)  ![Pull Requests](https://img.shields.io/github/issues-pr/b70ga/b70ga-IPLOGGER?style=flat-square) ![License](https://img.shields.io/github/license/b70ga/b70ga-IPLOGGER?style=flat-square)
+![Stars](https://img.shields.io/github/stars/b70ga/b70ga-IPLOGGER?style=flat-square) ![Contributors](https://img.shields.io/github/contributors/b70ga/b70ga-IPLOGGER)  [![](https://contrib.rocks/image?repo=b70ga/b70ga-IPLOGGER)](https://github.com/b70ga/b70ga-IPLOGGER/graphs/contributors) ![License](https://img.shields.io/github/license/b70ga/b70ga-IPLOGGER?style=flat-square)
 
 ---
 
